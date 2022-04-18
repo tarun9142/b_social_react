@@ -1,7 +1,7 @@
-import {API_URLS, LOCALSTORAGE_TOKEN } from "../utils";
+import {API_URLS, LOCALSTORAGE_TOKEN_KEY } from "../utils";
 
 const customFetch = async (url, { body, ...customConfig }) => {
-  const token = window.localStorage.getItem(LOCALSTORAGE_TOKEN);
+  const token = window.localStorage.getItem(LOCALSTORAGE_TOKEN_KEY);
 
   const headers = {
     "content-type": "application/json",
