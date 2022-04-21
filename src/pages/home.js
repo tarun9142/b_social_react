@@ -1,4 +1,5 @@
 import styles from '../styles/home.module.css';
+import propTypes from 'prop-types';
 
 const Home = ({posts})=> {
     return(
@@ -8,7 +9,7 @@ const Home = ({posts})=> {
             <div className={styles.postHeader}>
               <div className={styles.postAvatar}>
                 <img
-                  src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1650268607~hmac=eab2cb0ecf254c1bf716060490f199c2"
+                  src="https://cdn-icons-png.flaticon.com/128/149/149071.png"
                   alt="user-pic"
                 />
                 <div>
@@ -21,7 +22,7 @@ const Home = ({posts})=> {
               <div className={styles.postActions}>
                 <div className={styles.postLike}>
                   <img
-                    src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670153.png?token=exp=1650268715~hmac=0935f1e45c14640cf231471ca806b823"
+                    src="https://cdn-icons-png.flaticon.com/512/456/456115.png"
                     alt="likes-icon"
                   />
                   <span>5</span>
@@ -29,7 +30,7 @@ const Home = ({posts})=> {
   
                 <div className={styles.postCommentsIcon}>
                   <img
-                    src="https://cdn-icons.flaticon.com/png/512/2190/premium/2190654.png?token=exp=1650268783~hmac=14d7cec4240734b3f5810851be193196"
+                    src="https://t4.ftcdn.net/jpg/01/09/34/83/240_F_109348365_Z8PhLswPi5USmZxOyH31cpNVspCHfoD5.jpg"
                     alt="comments-icon"
                   />
                   <span>2</span>
@@ -57,4 +58,7 @@ const Home = ({posts})=> {
     )
 }
 
+Home.propTypes = {
+    posts: propTypes.array.isRequired,
+}
 export default Home;
